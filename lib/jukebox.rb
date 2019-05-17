@@ -59,7 +59,6 @@ def run(songs)
       play(songs)
     when "exit"
       exit_jukebox
-      break
     end
     puts "Please enter a command:"
     command = gets.chomp
