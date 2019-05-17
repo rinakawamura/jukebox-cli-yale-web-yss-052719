@@ -21,19 +21,19 @@ def list(songs)
 end
 
 def play(songs)
-  song_array = []
-  songs.each do |song|
-    array = song.split(" ")
-    array.each_with_index do |word, index|
-      if word == "-"
-        song_array << array[index + 1 .. -1].join(" ")
-      end
-    end
-  end
+  # song_array = []
+  # songs.each do |song|
+  #   array = song.split(" ")
+  #   array.each_with_index do |word, index|
+  #     if word == "-"
+  #       song_array << array[index + 1 .. -1].join(" ")
+  #     end
+  #   end
+  # end
   puts "Please enter a song name or number:"
   response = gets.chomp
-  if song_array.include?(response)
-    puts "Playing #{songs[song_array.index(response)]}"
+  if songs.include?(response)
+    puts "Playing #{responsse}"
   elsif response.to_i.between?(1, song_array.length)
     puts "Playing #{songs[response.to_i - 1]}"
   else
