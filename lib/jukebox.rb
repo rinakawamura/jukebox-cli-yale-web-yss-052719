@@ -33,7 +33,7 @@ def play(songs)
   puts "Please enter a song name or number:"
   response = gets.chomp
   if song_array.include?(response)
-    puts "Playing #{songs[songs_array.index(response)]}"
+    puts "Playing #{songs[song_array.index(response)]}"
   elsif response.between?(1, song_array.length)
     puts "Playing #{songs[response - 1]}"
   else
