@@ -57,10 +57,9 @@ def run(songs)
       list(songs)
     when "play"
       play(songs)
-    when "exit"
-      exit_jukebox
     end
     puts "Please enter a command:"
     command = gets.chomp
   end
+  exit_jukebox
 end
