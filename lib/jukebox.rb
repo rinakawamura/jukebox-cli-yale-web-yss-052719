@@ -54,9 +54,3 @@ def run(songs)
     command = gets.chomp
   end
 end
-
-
-
-
-
-  end
