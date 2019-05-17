@@ -36,7 +36,7 @@ def play(songs)
   if song_array.include?(response)
     puts "Playing #{songs[song_array.index(response)]}"
   elsif response.to_i.between?(1, song_array.length)
-    puts "Playing #{songs[response - 1]}"
+    puts "Playing #{songs[response.to_i - 1]}"
   else
     puts "Invalid input, please try again"
   end
