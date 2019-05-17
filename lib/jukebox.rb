@@ -30,6 +30,7 @@ def play(songs)
       end
     end
   end
+  puts song_array
   puts "Please enter a song name or number:"
   response = gets.chomp
   if song_array.include?(response)
